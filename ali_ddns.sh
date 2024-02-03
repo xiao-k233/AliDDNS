@@ -269,7 +269,7 @@ describe_record()
 update_record()
 {
 	# get ip
-	if [ "DomainType" == "A" ]; then
+	if [ $DomainType == "A" ]; then
 		get_my_ipv4
 		get_domain_ipv4
 	else
